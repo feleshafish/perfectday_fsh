@@ -173,7 +173,7 @@ label froyo:
 label photobooth:
     you "Let's go find a photobooth!"
     l "Yay Let's figure out what poses we'll do first. And what props?!"
-    scene photobott with fade
+    scene photobooth with fade
     "There are fans, sunglasses, and so much more. It ends up being the best photo session I've had in years."
 
     menu:

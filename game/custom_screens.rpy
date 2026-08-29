@@ -36,15 +36,27 @@ screen journal():
     add "notebook.png"
 
     text "[my_name]"
-
-    textbutton "Close Journal":
-        action Return()
     
 
     frame:
         xalign 0.5
         yalign 0.5
         background Frame("images/notebook.png", Borders(25, 25, 25, 25))
+
+    textbutton "Close Journal":
+        yalign 0.95
+        xalign 0.5
+
+        # text colors
+        text_idle_color  "#271515"
+        text_hover_color  "#642121"
+        text_selected_color  "#398bce"
+
+        if not main_menu:
+            action Return()
+        else:
+            action Hide("journal")
+        
 
     
 
