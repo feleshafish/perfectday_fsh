@@ -83,4 +83,12 @@ label start:
 
     return
 
-label ending
+label ending:
+    scene bg room with fade
+    "Goes back home to bedroom"
+    you "That was a perfect day."
+    l "Let's look back at the journal to see what we did today!"
+    you "Wow, today was amazing."
+    l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]"
+    "Your eyes go dark"
+    scene bg black with fade
