@@ -122,9 +122,94 @@ label thai:
     you "I'm really craving some Thai food right now... Wanna get? Let's go get some mango sticky rice too!"
     l "For sure. I love mangos!"
 
-
-
+    jump ending
 
 
 
 label book:
+    you "I'm going to read a book."
+
+    $ book_name = renpy.call_screen("name", "What book will you be reading")
+    $ book_name = book_name.strip()
+
+    if not book_name:
+        $ book_name = "The Art of War"
+
+    you "I want to watch [book_name]!"
+    "You read the book for two hours."
+
+    l "Neat! What should we do now?"
+    
+    menu: 
+
+        "Make cupcakes":
+            jump cupcakes
+
+        "Take a nap":
+            jump nap
+
+
+label cupcakes:
+    you "Let's make cupcakes!"
+    l "I'm an amazing baker. Heh."
+    you "How is that possible... You are a leaf."
+    l "You'll see."
+    "Leafy does not fully mix the baking soda."
+    you "Why is this so bitter?"
+    l "..."
+    jump book2
+
+label nap:
+    you "I'm going to take a nap."
+    l "Alright, sleep well!"
+    "You sleep for 3 hours."
+    you "That was a nice nap. I feel refreshed."
+    jump book2
+
+label book2:
+    l "What do you want to do now?"
+
+    menu: 
+
+        "Self-care routine":
+            jump selfcare
+
+        "Make fun drinks":
+            jump drinks
+
+label selfcare:
+    you "Let's do some skincare."
+    l "I love this moisturizer!"
+    jump hungry
+
+
+label drinks:
+    you "Let's make drinks! I'd love some boba right now."
+    l "Ooh, I can help! I could brew some tea."
+    you "You do know tea is made up of crushed up leaves, right..."
+    jump hungry
+
+label hungry: 
+    you "I'm getting hungry... Let's make some food!"
+    menu: 
+
+        "Make pizza":
+            jump pizza
+
+        "Make chicken biryani":
+            jump biryani
+
+label pizza:
+    you "Let's make pizza."
+    l "I want a margarita pizza."
+    you "Hm... you know, basil is kind of like a leaf."
+    jump ending
+
+label biryani:
+    you "Let's make chicken biryani."
+    l "Finally! I'm getting my macronutrients up."
+    you "What macronutrients? You're a leaf."
+    jump ending
+
+
+
