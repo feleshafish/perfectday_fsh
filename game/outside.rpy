@@ -35,6 +35,7 @@ label beach:
 
     scene black with fade
     scene bg beach with fade
+    show leafy
 
     you "We've arrived at the beach pretty quickly."
 
@@ -50,6 +51,8 @@ label beach:
 
 label swim:
     you "Let's go swimming."
+    show leafy
+        
     l "Ooh, I didn't know you could swim!"
     l "My favorite stroke is butterfly. What's yours?"
     you "I like freestyle."
@@ -69,6 +72,8 @@ label swim:
             jump sub
 
 label surf:
+    show leafy
+    show surfboard
     l "Let's go surfing."
     l "I see a huge wave coming. Let's go shred it!"
 
@@ -88,6 +93,7 @@ label surf:
 label smoothie:
     l "I'm hungry, let's get food!"
     scene bg playa bowls with fade
+    show leafy
     l "Which one are you getting? I'm getting a Nutella acai bowl."
     $ renpy.call_screen("name", "Which one are you getting?")
 
@@ -104,7 +110,8 @@ label smoothie:
 
 label sub:
     l "I'm hungry, let's get food!"
-    scene bg mikes subs with fade
+    scene bg mike sub with fade
+    show leafy
     l "What sandwich are you getting? I'm getting a BLT."
     $ renpy.call_screen("name", "What sandwich are you getting?")
 
@@ -124,9 +131,12 @@ label shopping:
 
     "We arrive at the nearest shop within a few minutes."
     scene bg beachside shop with fade
+    show leafy
     # swap scene to shop
     l "Wait, I love that skirt."
     you "You should totally get it!"
+    hide leafy
+    show sk_leafy
     #ADD SKIRT TO LEAFY
     jump ending
 
@@ -136,12 +146,14 @@ label fancy:
     you "So what?"
     
     "Leafy laughs and concedes, before we head out to the restaurant to eat."
-    scene bg fancy resturant with fade
+    scene bg fancy restaurant with fade
+    show leafy
     l "This looks delicious."
     you "Steak is the best.."
     jump ending
 
 label city:
+    show leafy
     l "So where are we heading first?"
     you "I'm not sure. There's the cute froyo place down the street, and a photobooth nearby. And a bunch of other places, like-"
 
@@ -160,6 +172,7 @@ label froyo:
     l "I'm gonna get a vanilla froyo with gummy bears."
     you "That sounds yummy!"
     scene bg froyo store with fade
+    show leafy
     "We eat for a solid hour or two, before deciding that it's time to go find another place to visit."
 
     menu:
@@ -174,6 +187,8 @@ label photobooth:
     you "Let's go find a photobooth!"
     l "Yay Let's figure out what poses we'll do first. And what props?!"
     scene bg photobooth with fade
+    show leafy
+    show photobooth
     "There are fans, sunglasses, and so much more. It ends up being the best photo session I've had in years."
 
     menu:
@@ -187,6 +202,7 @@ label popup:
     you "Let's go to the Glossier pop-up nearby. It just opened!"
     l "That sounds fun! I hope I win a lip gloss."
     scene city with fade
+    show leafy
     "He did not, in fact, win the lip gloss. We left with nothing besides an empty wallet from all out betting."
 
     menu:
@@ -199,9 +215,13 @@ label popup:
 
 label local:
     l "I see a store over there, let's go check it out!"
+    scene bg beachside shop with fade
+    show leafy
     l "Wait, I love the skirt."
     you "You should totally get it."
+    hide leafy
     # ADD SKIRT TO LEAFY
+    show sk_leafy
     menu:
         "Once we finish buying the new skirt for Leafy, we..."
 
@@ -212,14 +232,17 @@ label local:
 
 label famous:
     scene bg daytime beach shop with fade
+    show leafy
     you "Let's go to that spot over there. I heard about it on Instagram."
     #this is both outside the resturant
     scene bg night beach shop with fade
+    show leafy
     l "That was delicious."
     jump ending
 
 label digicam:
     scene bg night beach shop with fade
+    show leafy
     you "The sunset looks beautiful, let's take some photos."
     "We take a hundred or so photos. At the end of it all, Leafy says what I was thinking."
     l "These pictures look perfect."
