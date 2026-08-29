@@ -87,6 +87,7 @@ label surf:
 
 label smoothie:
     l "I'm hungry, let's get food!"
+    scene playa bowls with fade
     l "Which one are you getting? I'm getting a Nutella acai bowl."
     $ renpy.call_screen("name", "Which one are you getting?")
 
@@ -103,6 +104,7 @@ label smoothie:
 
 label sub:
     l "I'm hungry, let's get food!"
+    scene mikes subs with fade
     l "What sandwich are you getting? I'm getting a BLT."
     $ renpy.call_screen("name", "What sandwich are you getting?")
 
@@ -115,12 +117,13 @@ label sub:
         "Go beachside shopping":
             jump shopping
         "Go to fancy beachside restaurant":
-            jump fancy
+            jump fancy 
         
 label shopping:
     you "Shopping it is!"
 
     "We arrive at the nearest shop within a few minutes."
+    scene beachside shop with fade
     # swap scene to shop
     l "Wait, I love that skirt."
     you "You should totally get it!"
@@ -133,7 +136,7 @@ label fancy:
     you "So what?"
     
     "Leafy laughs and concedes, before we head out to the restaurant to eat."
-
+    scene fancy resturant with fade
     l "This looks delicious."
     you "Steak is the best.."
     jump ending
@@ -156,7 +159,7 @@ label froyo:
     you "Let's get froyo."
     l "I'm gonna get a vanilla froyo with gummy bears."
     you "That sounds yummy!"
-
+    scene froyo store with fade
     "We eat for a solid hour or two, before deciding that it's time to go find another place to visit."
 
     menu:
@@ -170,7 +173,7 @@ label froyo:
 label photobooth:
     you "Let's go find a photobooth!"
     l "Yay Let's figure out what poses we'll do first. And what props?!"
-
+    scene photobott with fade
     "There are fans, sunglasses, and so much more. It ends up being the best photo session I've had in years."
 
     menu:
@@ -183,7 +186,7 @@ label photobooth:
 label popup:
     you "Let's go to the Glossier pop-up nearby. It just opened!"
     l "That sounds fun! I hope I win a lip gloss."
-
+    scene city with fade
     "He did not, in fact, win the lip gloss. We left with nothing besides an empty wallet from all out betting."
 
     menu:
@@ -208,12 +211,15 @@ label local:
             jump digicam
 
 label famous:
+    scene daytime beach shop with fade
     you "Let's go to that spot over there. I heard about it on Instagram."
     #this is both outside the resturant
+    scene night beach shop with fade
     l "That was delicious."
     jump ending
 
 label digicam:
+    scene night beach shop with fade
     you "The sunset looks beautiful, let's take some photos."
     "We take a hundred or so photos. At the end of it all, Leafy says what I was thinking."
     l "These pictures look perfect."
