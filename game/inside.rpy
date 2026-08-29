@@ -18,11 +18,15 @@ label movie:
 
     l "Awesome. What movie would you like to watch together?"
 
-    $ movie_name = renpy.call_screen("movie name", "What movie are you guys watching?")
+    $ movie_name = renpy.call_screen("name", "What movie are you guys watching?")
     $ movie_name = movie_name.strip()
 
     if not movie_name:
         $ movie_name = "Interstellar"
+
+    you "I want to watch [movie_name]! I want to do something else too, though."
+
+    return
 
 
 
