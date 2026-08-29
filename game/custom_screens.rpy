@@ -30,6 +30,22 @@ style name:
 
 
 
-# screen journal():
-    # imagebutton:
+screen journal():
+    modal True
+
+    add "notebook.png"
+
+    text "[my_name]"
+
+    textbutton "Close Journal":
+        action Return()
+    
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        background Frame("images/notebook.png", Borders(25, 25, 25, 25))
+
+    
+
 

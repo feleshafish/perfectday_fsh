@@ -246,7 +246,9 @@ screen quick_menu():
             style_prefix "quick"
             style "quick_menu"
 
+            textbutton _("Main Menu") action MainMenu()
             textbutton _("Back") action Rollback()
+            textbutton _("Journal") action ShowMenu("journal")
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
@@ -254,6 +256,7 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
+            
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -316,12 +319,11 @@ screen navigation():
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
-
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("About") action ShowMenu("about")
 
-        # textbutton _("Journal") action ShowMenu("journal")
+        textbutton _("Journal") action ShowMenu("journal")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 

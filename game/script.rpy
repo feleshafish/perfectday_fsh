@@ -12,7 +12,11 @@ default food_points = 0
 default skirt = False
 default relaxed = 0
 
+default my_name = ""
 
+default journal_text = ""
+
+# page flip sound effect credits:Sound Effect by Alex from Pixabay Sound Effect by <a href="https://pixabay.com/users/oxidvideos-37598254/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Alex</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Pixabay</a>
 
 # The game starts here.
 
@@ -24,6 +28,7 @@ label start:
     if not player_name:
         $ player_name = "Gerald"
 
+    $ name = my_name
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
