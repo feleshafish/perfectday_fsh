@@ -26,8 +26,6 @@ label movie:
 
     you "I want to watch [movie_name]! I want to do something else too, though."
 
-    menu:
-
         
 
     return
