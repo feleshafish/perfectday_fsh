@@ -33,6 +33,8 @@ style name:
 screen journal():
     modal True
 
+    style_prefix "input"
+
     add "notebook.png"
 
     text "[my_name]"
@@ -40,9 +42,37 @@ screen journal():
 
     frame:
         xalign 0.5
-        yalign 0.5
-        background Frame("images/notebook.png", Borders(25, 25, 25, 25))
+        yalign 0.7
+        xpadding 20
+        ypadding 20
 
+        background None
+
+        fixed:
+            xsize 800
+            ysize 600
+
+            input:
+                value VariableInputValue("journal_text")
+                length 250
+
+                multiline True
+                xmaximum 750
+                pixel_width 750
+                
+                color "#000000"
+
+            textbutton "Confirm":
+                xalign 0.5
+                yalign 1.00
+
+                text_idle_color  "#271515"
+                text_hover_color  "#642121"
+                text_selected_color  "#398bce"
+                action Return()
+
+
+    
     textbutton "Close Journal":
         yalign 0.95
         xalign 0.5
