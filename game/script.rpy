@@ -16,6 +16,9 @@ default my_name = ""
 
 default journal_text = ""
 
+default setting = 0
+
+
 # page flip sound effect credits:Sound Effect by Alex from Pixabay Sound Effect by <a href="https://pixabay.com/users/oxidvideos-37598254/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Alex</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Pixabay</a>
 
 # The game starts here.
@@ -75,8 +78,10 @@ label start:
         l "So, what would you like to do first on your dream day?"
 
         "Go outside.":
+            $ setting = 1
             jump outdoors
         "Stay home.":
+            $ setting = 2
             jump indoors
 
 
@@ -87,7 +92,7 @@ label ending:
     scene bg room with fade
     "Goes back home to bedroom"
     you "That was a perfect day."
-    l "Let's look back at the journal to see what we did today!"
+    l "Let's look back at the journalss to see what we did today!"
     you "Wow, today was amazing."
     l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]"
     "Your eyes go dark"
