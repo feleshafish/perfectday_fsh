@@ -8,4 +8,4 @@ image bg road = im.Scale("images/backgrounds/road.jpg", 1920, 1080)
 
 # character images
 image leafy = im.Scale("images/leafy.png", 770, 900)
-image skirt leafy = im.Scale(images/"sk_leafy.png", 770, 900)
+image skirt leafy = im.Scale("images/sk_leafy.png", 770, 900)
