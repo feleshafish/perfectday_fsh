@@ -41,7 +41,7 @@ label surf:
 label smoothie:
     l "I'm hungry, let's get food!"
     l "Which one are you getting? I'm getting a Nutella acai bowl."
-    #ADD INSERT
+    $ renpy.call_screen("flavor", "Which one are you getting?")
     menu:
         "Go beachside shopping":
             jump shopping
@@ -51,7 +51,7 @@ label smoothie:
 label sub:
     l "I'm hungry, let's get food!"
     l "What sandwich are you getting? I'm getting a BLT."
-    # ADD INSERT
+    $ renpy.call_screen("sandwich", "What sandwich are you getting?")
     menu:
         "Go beachside shopping":
             jump shopping
