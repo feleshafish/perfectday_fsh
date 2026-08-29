@@ -1,6 +1,7 @@
 label outdoors:
     
     l "Let's head outside."
+    scene city with fade
     menu:
 
         "Beach Day.":
@@ -8,8 +9,8 @@ label outdoors:
         "Walk around the city.":
             jump city
 label beach:
-
     l "Let's drive to the beach!"
+    scene bg beach with fade
     menu:
         
         "Swim":
@@ -41,7 +42,7 @@ label surf:
 label smoothie:
     l "I'm hungry, let's get food!"
     l "Which one are you getting? I'm getting a Nutella acai bowl."
-    $ renpy.call_screen("flavor", "Which one are you getting?")
+    $ renpy.call_screen("name", "Which one are you getting?")
     menu:
         "Go beachside shopping":
             jump shopping
@@ -51,7 +52,7 @@ label smoothie:
 label sub:
     l "I'm hungry, let's get food!"
     l "What sandwich are you getting? I'm getting a BLT."
-    $ renpy.call_screen("sandwich", "What sandwich are you getting?")
+    $ renpy.call_screen("name", "What sandwich are you getting?")
     menu:
         "Go beachside shopping":
             jump shopping
