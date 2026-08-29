@@ -8,9 +8,6 @@ define you = Character(_("[player_name]"), color="#74b7f2")
 
 
 # character variables
-default food_points = 0
-default skirt = False
-default relaxed = 0
 
 default my_name = ""
 
