@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("PerfectDay")
+define config.name = _("My Perfect Day!")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -30,6 +30,9 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+In "My Perfect Day," you can look forward to designing your own day, the things you'd like to do, and what you've taken from your day.
+
+This game was created for Hack Club Athena's Sunbeam @ NYC, by Felesha Fei, Sophia Huang, and Arisha Islam. Made with love!
 """)
 
 

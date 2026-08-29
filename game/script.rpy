@@ -3,31 +3,77 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define l = Character(_("Leafy"), color="#49ec36")
+define you = Character(_("[player_name]"), color="#74b7f2")
+
+
+# character variables
+default food_points = 0
+default skirt = False
+default relaxed = 0
+
 
 
 # The game starts here.
 
 label start:
 
+    $ player_name = renpy.call_screen("name", "Nice to meet you! What is your name?")
+    $ player_name = player_name.strip()
+
+    if not player_name:
+        $ player_name = "Gerald"
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene bg room with fade
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    "The morning comes slowly, like any other day."
+    "I raise my head to gaze at the sun shining down."
+    "Today will probably be another drag. Another day of cramming assignments, of running to work right after said assignments, of-"
 
-    show eileen happy
+    l "Rise and shine, [player_name]! Your perfect day awaits!"
 
-    # These display lines of dialogue.
+    "..."
 
-    e "You've created a new Ren'Py game."
+    you "What?"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    "A little leaf-like creature pops up in front of me and grins."
 
-    # This ends the game.
+    show leafy with vpunch
+
+    l "I'm Leafy, your new assistant, and you can count on me to make TODAY the BEST DAY EVER!"
+    l "Whaddya say?"
+
+    you "I don't even know you, dude."
+
+    l "That doesn't matter! I'm gonna make your day awesome anyways. You look like you have a free schedule!"
+
+    you "I don't."
+
+    "Leafy shrugs."
+
+    l "Well, ya do now! You can do anything!"
+    you "Seriously?"
+    l "Yeah! All I need you to do, though, is to journal whatever you do. That way you have records of your perfect day going just as planned!"
+    you "How?"
+    l "Press the 'J' key, or your \"Journal\" button down below to do it! Write away!"
+    l "And now for the fun part..."
+    l "Select whatever you'd like to do until your day is filled with 5 events. The final event is journaling!"
+
+    you "Mhm..."
+
+    menu:
+
+        l "So, what would you like to do first on your dream day?"
+
+        "Go outside.":
+            jump outdoors
+        "Stay home.":
+            jump indoors
+
+
 
     return
