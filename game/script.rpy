@@ -8,9 +8,6 @@ define you = Character(_("[player_name]"), color="#74b7f2")
 
 
 # character variables
-default food_points = 0
-default skirt = False
-default relaxed = 0
 
 default my_name = ""
 
@@ -93,9 +90,13 @@ label ending:
     show leafy
     "Goes back home to bedroom"
     you "That was a perfect day."
-    l "Let's look back at the journalss to see what we did today!"
+    l "Let's look back at the journals to see what we did today!"
     you "Wow, today was amazing."
     l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]"
+<<<<<<< HEAD
     hide leafy
     "Your eyes go dark"
+=======
+    "Your eyes go dark..."
+>>>>>>> b913213145357a207f5d25f6ef5da1a0068d5680
     scene bg black with fade
