@@ -19,8 +19,7 @@ default leafy_wearing_skirt = False
 
 # music variable
 
-define morning = "morning_music.mp3"
-
+define room = "morning_music.mp3"
 
 # page flip sound effect credits:Sound Effect by Alex from Pixabay Sound Effect by <a href="https://pixabay.com/users/oxidvideos-37598254/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Alex</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Pixabay</a>
 
@@ -43,7 +42,7 @@ label start:
 
     scene bg room with fade
 
-    play music morning fadein 0.6 volume 0.5
+    play music room fadein 0.6 volume 0.5
 
     "The morning comes slowly, like any other day."
     "I raise my head to gaze at the sun shining down."
@@ -58,13 +57,6 @@ label start:
     "A little leaf-like creature pops up in front of me and grins."
 
     show leafy with vpunch
-    play music "Boing.mp3" noloop
-
-    # From Youtube https://www.youtube.com/watch?v=TLqL_68JPec
-    with Pause(1.0)
-    play music morning fadein 0.7 volume 0.5
-
-    #
 
     l "I'm Leafy, your new assistant, and you can count on me to make TODAY the BEST DAY EVER!"
     l "Whaddya say?"
@@ -109,6 +101,7 @@ label start:
 
 label ending:
     scene bg room with fade
+    play music "endingmusic.mp3" volume 0.3 fadein 0.5
 
     if leafy_wearing_skirt:
         show sk_leafy
