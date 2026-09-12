@@ -292,49 +292,56 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
-        style_prefix "navigation"
-
-        xpos gui.navigation_xpos
+    frame:
+        background "#011b02aa"
+        xalign 0.0
+        xminimum 375
         yalign 0.5
+        padding(0,300)
 
-        spacing gui.navigation_spacing
+        vbox:
+            style_prefix "navigation"
 
-        if main_menu:
+            xpos gui.navigation_xpos
+            yalign 0.5
 
-            textbutton _("Start") action Start()
+            spacing gui.navigation_spacing
 
-        else:
+            if main_menu:
 
-            textbutton _("History") action ShowMenu("history")
+                textbutton _("Start") action Start()
 
-            textbutton _("Save") action ShowMenu("save")
+            else:
 
-        textbutton _("Load") action ShowMenu("load")
+                textbutton _("History") action ShowMenu("history")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+                textbutton _("Save") action ShowMenu("save")
 
-        if _in_replay:
+            textbutton _("Load") action ShowMenu("load")
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("Preferences") action ShowMenu("preferences")
 
-        elif not main_menu:
-            textbutton _("Main Menu") action MainMenu()
+            if _in_replay:
 
-        textbutton _("About") action ShowMenu("about")
+                textbutton _("End Replay") action EndReplay(confirm=True)
 
-        textbutton _("Journal") action ShowMenu("journal")
+            elif not main_menu:
+                textbutton _("Main Menu") action MainMenu()
 
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+            textbutton _("About") action ShowMenu("about")
 
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Journal") action ShowMenu("journal")
 
-        if renpy.variant("pc"):
+            if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+                ## Help isn't necessary or relevant to mobile devices.
+                textbutton _("Help") action ShowMenu("help")
+
+            if renpy.variant("pc"):
+
+                ## The quit button is banned on iOS and unnecessary on Android and
+                ## Web.
+                textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -405,6 +412,7 @@ style main_menu_text:
 
 style main_menu_title:
     properties gui.text_properties("title")
+    font "fonts/Title.ttf"
 
 style main_menu_version:
     properties gui.text_properties("version")
