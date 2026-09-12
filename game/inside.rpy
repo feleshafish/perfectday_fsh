@@ -175,6 +175,7 @@ label sourdough:
     
 label lunch:
     scene bg living with fade
+    show leafy 
     l "Well, now that we've done that, let's go out to eat. Whatcha craving?"
     
     menu: 
@@ -190,6 +191,7 @@ label niche:
     you "I saw this super niche spot on the way back!"
 
     scene bg city with fade
+    show leafy
 
     "When I said niche, it seems Leafy didn't expect it to be so unknown that there were only two other customers besides us."
 
@@ -200,6 +202,7 @@ label niche:
     jump ending
 
 label thai:
+    show leafy
     you "I'm really craving some Thai food right now... Wanna get? Let's go get some mango sticky rice too!"
     l "For sure. I love mangos!"
     you "Have you had sticky rice before?"
