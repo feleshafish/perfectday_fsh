@@ -10,6 +10,7 @@ label outdoors:
 
     scene black with fade
     scene city with fade
+    play music "outsidemusic.mp3" fadein 0.5 volume 0.3
 
     show leafy
 
@@ -241,7 +242,7 @@ label local:
     play music "Glitter Sound Effect for Music or Editing.mp3" noloop
     # From Youtube https://www.youtube.com/watch?v=IZWL2gALgvM
     with Pause(2.0)
-    play music morning fadein 0.7 volume 0.5
+    
     menu:
         "Once we finish buying the new skirt for Leafy, we..."
 
