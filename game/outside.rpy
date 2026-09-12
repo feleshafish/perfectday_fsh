@@ -1,4 +1,6 @@
 label outdoors:
+
+    
     
     you "Let's head outside."
     you "I'm kinda sick of staying in here all the time."
@@ -73,7 +75,8 @@ label swim:
 
 label surf:
     show leafy
-    show surfboard
+    show surfboard at Transform(xalign =0.9, yalign= 0.7)
+
     l "Let's go surfing."
     l "I see a huge wave coming. Let's go shred it!"
 
@@ -82,7 +85,7 @@ label surf:
     l "I'm hungry."
     you "Yeah, me too."
     menu:
-
+        l "What should we eat?"
         "Get smoothie bowl":
             $ beach_food = "smoothie"
             jump smoothie
@@ -138,6 +141,11 @@ label shopping:
     hide leafy
     show sk_leafy
     #ADD SKIRT TO LEAFY
+    "I blink, before bursting out into laughter."
+    you "You look so- so- [i]pfft[/i]- r-"
+    "[i]Ridicuous,[/i] I think."
+    "Leafy looks up expectantly."
+
     jump ending
 
 label fancy:
@@ -187,8 +195,9 @@ label photobooth:
     you "Let's go find a photobooth!"
     l "Yay Let's figure out what poses we'll do first. And what props?!"
     scene bg photobooth with fade
-    show leafy
-    show photobooth
+    show leafy at Transform(xalign=0.7, yalign=0.5)
+    show photobooth at Transform(xalign=0.0, yalign=0.6):
+        rotate 60.0
     "There are fans, sunglasses, and so much more. It ends up being the best photo session I've had in years."
 
     menu:

@@ -7,3 +7,9 @@ This game was created for Hack Club Athena's Sunbeam 2026 @ NYC by Felesha Fei, 
 
 Play it on itch.io now!
 https://blueheart-elf.itch.io/my-perfect-day
+
+Credits:
+- music from Pixabay 
+- SFX from Pixabay
+- backgrounds from Gacha Life
+- Code, art, and storyline by Felesha, Sophia, and Arisha

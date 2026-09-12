@@ -64,9 +64,14 @@ label start:
     you "Seriously?"
     l "Yeah! All I need you to do, though, is to journal whatever you do. That way you have records of your perfect day going just as planned!"
     you "How?"
-    l "Press the 'J' key, or your \"Journal\" button down below to do it! Write away!"
-    l "And now for the fun part..."
-    l "Select whatever you'd like to do until your day is filled with 5 events. The final event is journaling!"
+    l "Press the \"Journal\" button down below to do it! Write away!"
+
+    you "You're talking like we're in some simulation or something..."
+
+    "Leafy primly ignores my statement."
+
+    l "Anyways, now for the fun part..."
+    l "Select whatever you'd like to do until your day is filled with 5 events. The final event is journaling! Write what you did! Relish it!"
 
     you "Mhm..."
 
@@ -88,10 +93,21 @@ label start:
 label ending:
     scene bg room with fade
     show leafy
-    "Goes back home to bedroom"
-    you "That was a perfect day."
-    l "Let's look back at the journals to see what we did today!"
-    you "Wow, today was amazing."
-    l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]"
-    "Your eyes go dark..."
-    scene bg black with fade
+    "We finish all our activities a little late. As I open my mouth to speak, Leafy interrupts."
+    l "Soooooo, did you have fun? I know I did! We did a bit of this and a bit of that and honestly that was the most fun I've had in-"
+    you "Years."
+    "Leafy stares unblinkingly, pausing the rambling."
+    "I cough."
+    you "I mean, this is- weren't you gonna say that? The most fun you've had in years."
+    you "It was the perfect day."
+    l "..."
+    l "It was. It really was, [player_name]! We should look at your journal together. To see what we did today!"
+    call screen journal
+    "I close it up once we're done writing and reading."
+    you "So this is the end, yeah?"
+    l "Nothing ever ends, [player_name]! They just get better in ways you dont dream they will."
+    l "Speaking of dreams..."
+    l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]."
+    "My eyes go dark before I can respond."
+    scene black with fade
+    "I hope that day comes soon."
