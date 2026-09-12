@@ -9,6 +9,7 @@ label indoors:
     you "Yeah, I guess you have a point."
 
     scene bg living with fade
+    play music "indoorsmusic.mp3" fadein 0.5 volume 0.4
 
     "Leafy has to rush after me as I walk to the living room."
 
@@ -44,7 +45,7 @@ label movie:
 
     "I shrug, and flip on the TV, making a noise of appreciation."
     "We sit through the long movie, but it was so fun that the experience feels short."
-    "I get off of the sofa a changed person."
+    "I get off of the couch a changed person."
 
 
 
