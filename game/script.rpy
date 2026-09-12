@@ -15,8 +15,14 @@ default journal_text = ""
 
 default setting = 0
 
+# music variable
+
+define morning = "morning_music.mp3"
+
 
 # page flip sound effect credits:Sound Effect by Alex from Pixabay Sound Effect by <a href="https://pixabay.com/users/oxidvideos-37598254/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Alex</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Pixabay</a>
+
+# first cutscene music credits: https://pixabay.com/music/bossa-nova-bossa-nova-morning-music-599227/
 
 # The game starts here.
 
@@ -34,6 +40,8 @@ label start:
     # images directory to show it.
 
     scene bg room with fade
+
+    play music morning fadein 0.7 volume 0.5
 
     "The morning comes slowly, like any other day."
     "I raise my head to gaze at the sun shining down."
