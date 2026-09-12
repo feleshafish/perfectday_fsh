@@ -1,5 +1,5 @@
 #########################
-## Ask useer their name
+## Ask user their name
 #########################
 screen name(prompt=Null):
     style_prefix "name"

@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -95,7 +95,7 @@ label ending:
     show leafy
     "We finish all our activities a little late. As I open my mouth to speak, Leafy interrupts."
     l "Soooooo, did you have fun? I know I did! We did a bit of this and a bit of that and honestly that was the most fun I've had in-"
-    you "Years."
+    you "Years?"
     "Leafy stares unblinkingly, pausing the rambling."
     "I cough."
     you "I mean, this is- weren't you gonna say that? The most fun you've had in years."
@@ -105,7 +105,7 @@ label ending:
     call screen journal
     "I close it up once we're done writing and reading."
     you "So this is the end, yeah?"
-    l "Nothing ever ends, [player_name]! They just get better in ways you dont dream they will."
+    l "Nothing ever ends, [player_name]! They just get better in ways you don't dream they will."
     l "Speaking of dreams..."
     l "Perhaps I'll meet you again on your next perfect day. Sweet dreams, [player_name]."
     "My eyes go dark before I can respond."
