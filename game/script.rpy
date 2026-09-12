@@ -15,8 +15,16 @@ default journal_text = ""
 
 default setting = 0
 
+default leafy_wearing_skirt = False
+
+# music variable
+
+define morning = "morning_music.mp3"
+
 
 # page flip sound effect credits:Sound Effect by Alex from Pixabay Sound Effect by <a href="https://pixabay.com/users/oxidvideos-37598254/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Alex</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=178322">Pixabay</a>
+
+# first cutscene music credits: https://pixabay.com/music/bossa-nova-bossa-nova-morning-music-599227/
 
 # The game starts here.
 
@@ -34,6 +42,8 @@ label start:
     # images directory to show it.
 
     scene bg room with fade
+
+    play music morning fadein 0.7 volume 0.5
 
     "The morning comes slowly, like any other day."
     "I raise my head to gaze at the sun shining down."
@@ -92,7 +102,12 @@ label start:
 
 label ending:
     scene bg room with fade
-    show leafy
+
+    if leafy_wearing_skirt:
+        show sk_leafy
+    else:
+        show leafy
+
     "We finish all our activities a little late. As I open my mouth to speak, Leafy interrupts."
     l "Soooooo, did you have fun? I know I did! We did a bit of this and a bit of that and honestly that was the most fun I've had in-"
     you "Years?"
