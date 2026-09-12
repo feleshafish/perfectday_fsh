@@ -1,12 +1,25 @@
 label indoors:
+    show leafy
 
     you "Let's stay home, Leafy."
+    l "Homebody much? Seriously, you really have some..."
+    "I shoot Leafy a deadpan stare."
+    l "Uh. Perfect taste!" 
+    l "We might wanna leave your bedroom, though. No point in staying in {i}here{/i} all day!"
+    you "Yeah, I guess you have a point."
 
     scene bg living with fade
 
-    menu:
+    "Leafy has to rush after me as I walk to the living room."
 
-        l "Sure! What do you want to do now?"
+    show leafy with vpunch
+
+    l "Ooh, this is a cozy little place you've got! You need to direct me to your realtor."
+    "I ignore the implication that this amorphous blob somehow lives somewhere, and roll my eyes."
+    you "Sooo, you said this was meant to be my perfect day. What should we do now?"
+
+    menu:
+        l "I mean, we could..."
 
         "Watch a movie":
             jump movie
@@ -16,17 +29,20 @@ label indoors:
 
 
 label movie:
+    l "Movie it is! Good choice."
+    l "I always love watching movies. We can't put any TVs in my treehouse, soooo..."
+    l "Go crazy! What movie would you like to watch together?"
 
-
-    l "Awesome. What movie would you like to watch together?"
-
-    $ movie_name = renpy.call_screen("name", "What movie are you guys watching?")
+    $ movie_name = renpy.call_screen("name", "I'd like to watch...")
     $ movie_name = movie_name.strip()
 
     if not movie_name:
         $ movie_name = "Interstellar"
 
-    you "I want to watch [movie_name]! I want to do something else too, though."
+    you "I want to watch [movie_name]! I've been reading reviews on Bluedit and Leafstagram recently and it seems cool."
+    l "Classic choice! I've watched it, but I promise I won't give spoilers."
+
+    "I shrug, and flip on the TV, making a noise of appreciation. Leafy"
 
     menu:
 
