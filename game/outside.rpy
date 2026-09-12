@@ -140,6 +140,7 @@ label shopping:
     you "You should totally get it!"
     hide leafy
     show sk_leafy
+    $ leafy_wearing_skirt = True
     #ADD SKIRT TO LEAFY
     "I blink, before bursting out into laughter."
     you "You look so- so- [i]pfft[/i]- r-"
@@ -233,6 +234,7 @@ label local:
     hide leafy
     # ADD SKIRT TO LEAFY
     show sk_leafy
+    $ leafy_wearing_skirt = True
     menu:
         "Once we finish buying the new skirt for Leafy, we..."
 
@@ -258,3 +260,5 @@ label digicam:
     "We take a hundred or so photos. At the end of it all, Leafy says what I was thinking."
     l "These pictures look perfect."
     jump ending
+
+
