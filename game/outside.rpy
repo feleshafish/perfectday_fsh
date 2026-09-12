@@ -141,6 +141,9 @@ label shopping:
     hide leafy
     show sk_leafy
     $ leafy_wearing_skirt = True
+    play music "Glitter Sound Effect for Music or Editing.mp3" noloop
+    with Pause(2.0)
+    play music morning fadein 0.7 volume 0.5
     #ADD SKIRT TO LEAFY
     "I blink, before bursting out into laughter."
     you "You look so- so- {i}pfft{/i}- r-"
