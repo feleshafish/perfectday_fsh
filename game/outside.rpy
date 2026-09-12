@@ -144,6 +144,8 @@ label shopping:
     "I blink, before bursting out into laughter."
     you "You look so- so- [i]pfft[/i]- r-"
     "[i]Ridiculous,[/i] I think."
+    you "You look so- so- {i}pfft{/i}- r-"
+    "{i}Ridiculous,{/i} I think."
     "Leafy looks up expectantly."
 
     jump ending
