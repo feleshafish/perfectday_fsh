@@ -14,7 +14,7 @@ Credits:
 - backgrounds from Gacha Life
 - Code, art, and storyline by Felesha, Sophia, and Arisha
 
-Music Links: 
+Music & SFX Links: 
 - https://pixabay.com/music/bossa-nova-bossa-nova-morning-music-599227/
 - https://pixabay.com/music/upbeat-sea-and-beach-278128/
 - https://pixabay.com/music/happy-childrens-tunes-go-outside-and-play-upbeat-kids-fun-flute-instrumental-piano-378329/
