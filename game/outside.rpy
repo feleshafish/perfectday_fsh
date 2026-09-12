@@ -37,6 +37,7 @@ label beach:
 
     scene black with fade
     scene bg beach with fade
+    play music "beach_music.mp3" fadein 0.5 volume 0.3
     show leafy
 
     you "We've arrived at the beach pretty quickly."

@@ -43,7 +43,7 @@ label start:
 
     scene bg room with fade
 
-    play music morning fadein 0.7 volume 0.5
+    play music morning fadein 0.6 volume 0.5
 
     "The morning comes slowly, like any other day."
     "I raise my head to gaze at the sun shining down."
