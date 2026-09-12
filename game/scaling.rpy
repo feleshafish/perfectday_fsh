@@ -1,5 +1,6 @@
 # background images
 image bg room = im.Scale("images/backgrounds/room.jpg", 1920, 1080)
+image bg room_dark = Transform(im.Scale("images/backgrounds/room.jpg", 1920, 1080), matrixcolor=BrightnessMatrix(-0.5))
 image bg beach = im.Scale("images/backgrounds/beach.jpg", 1920, 1080)
 image bg city = im.Scale("images/backgrounds/city.jpg", 1920, 1080)
 image bg mall = im.Scale("images/backgrounds/mall.jpg", 1920, 1080)

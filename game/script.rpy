@@ -100,7 +100,7 @@ label start:
     return
 
 label ending:
-    scene bg room with fade
+    scene bg room_dark with fade
     play music "endingmusic.mp3" volume 0.3 fadein 0.5
 
     if leafy_wearing_skirt:
