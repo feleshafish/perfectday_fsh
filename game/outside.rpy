@@ -222,7 +222,7 @@ label popup:
 
     menu:
 
-        "To shake the lossess off, we decide to..."
+        "To shake the losses off, we decide to..."
         "Go to famous food spot":
             jump famous
         "Take digicam photos":
