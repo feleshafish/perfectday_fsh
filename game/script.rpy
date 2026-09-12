@@ -15,6 +15,8 @@ default journal_text = ""
 
 default setting = 0
 
+default leafy_wearing_skirt = False
+
 # music variable
 
 define morning = "morning_music.mp3"
@@ -100,7 +102,12 @@ label start:
 
 label ending:
     scene bg room with fade
-    show leafy
+
+    if leafy_wearing_skirt:
+        show sk_leafy
+    else:
+        show leafy
+
     "We finish all our activities a little late. As I open my mouth to speak, Leafy interrupts."
     l "Soooooo, did you have fun? I know I did! We did a bit of this and a bit of that and honestly that was the most fun I've had in-"
     you "Years?"
