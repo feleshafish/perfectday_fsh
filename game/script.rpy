@@ -58,6 +58,13 @@ label start:
     "A little leaf-like creature pops up in front of me and grins."
 
     show leafy with vpunch
+    play music "Boing.mp3" noloop
+
+    # From Youtube https://www.youtube.com/watch?v=TLqL_68JPec
+    with Pause(1.0)
+    play music morning fadein 0.7 volume 0.5
+
+    #
 
     l "I'm Leafy, your new assistant, and you can count on me to make TODAY the BEST DAY EVER!"
     l "Whaddya say?"

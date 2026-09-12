@@ -143,6 +143,7 @@ label shopping:
     show sk_leafy
     $ leafy_wearing_skirt = True
     play music "Glitter Sound Effect for Music or Editing.mp3" noloop
+    # From Youtube https://www.youtube.com/watch?v=IZWL2gALgvM
     with Pause(2.0)
     play music morning fadein 0.7 volume 0.5
     #ADD SKIRT TO LEAFY
@@ -237,6 +238,10 @@ label local:
     # ADD SKIRT TO LEAFY
     show sk_leafy
     $ leafy_wearing_skirt = True
+    play music "Glitter Sound Effect for Music or Editing.mp3" noloop
+    # From Youtube https://www.youtube.com/watch?v=IZWL2gALgvM
+    with Pause(2.0)
+    play music morning fadein 0.7 volume 0.5
     menu:
         "Once we finish buying the new skirt for Leafy, we..."
 
