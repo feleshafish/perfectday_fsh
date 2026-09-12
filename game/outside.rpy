@@ -37,6 +37,7 @@ label beach:
 
     scene black with fade
     scene bg beach with fade
+    play music "beach_music.mp3" fadein 0.5 volume 0.3
     show leafy
 
     you "We've arrived at the beach pretty quickly."
@@ -141,6 +142,10 @@ label shopping:
     hide leafy
     show sk_leafy
     $ leafy_wearing_skirt = True
+    play music "Glitter Sound Effect for Music or Editing.mp3" noloop
+    # From Youtube https://www.youtube.com/watch?v=IZWL2gALgvM
+    with Pause(2.0)
+    play music morning fadein 0.7 volume 0.5
     #ADD SKIRT TO LEAFY
     "I blink, before bursting out into laughter."
     you "You look so- so- {i}pfft{/i}- r-"
@@ -217,7 +222,7 @@ label popup:
 
     menu:
 
-        "To shake the lossess off, we decide to..."
+        "To shake the losses off, we decide to..."
         "Go to famous food spot":
             jump famous
         "Take digicam photos":
@@ -233,6 +238,10 @@ label local:
     # ADD SKIRT TO LEAFY
     show sk_leafy
     $ leafy_wearing_skirt = True
+    play music "Glitter Sound Effect for Music or Editing.mp3" noloop
+    # From Youtube https://www.youtube.com/watch?v=IZWL2gALgvM
+    with Pause(2.0)
+    play music morning fadein 0.7 volume 0.5
     menu:
         "Once we finish buying the new skirt for Leafy, we..."
 
