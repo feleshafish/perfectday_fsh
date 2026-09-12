@@ -142,8 +142,8 @@ label shopping:
     show sk_leafy
     #ADD SKIRT TO LEAFY
     "I blink, before bursting out into laughter."
-    you "You look so- so- [i]pfft[/i]- r-"
-    "[i]Ridicuous,[/i] I think."
+    you "You look so- so- {i}pfft{/i}- r-"
+    you "{i}Ridicuous,{/i} I think."
     "Leafy looks up expectantly."
 
     jump ending
