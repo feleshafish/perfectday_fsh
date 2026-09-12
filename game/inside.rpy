@@ -42,9 +42,14 @@ label movie:
     you "I want to watch [movie_name]! I've been reading reviews on Bluedit and Leafstagram recently and it seems cool."
     l "Classic choice! I've watched it, but I promise I won't give spoilers."
 
-    "I shrug, and flip on the TV, making a noise of appreciation. Leafy"
+    "I shrug, and flip on the TV, making a noise of appreciation."
+    "We sit through the long movie, but it was so fun that the experience feels short."
+    "I get off of the sofa a changed person."
+
+
 
     menu:
+        you "Y'know, leafy, we should do something new now. I'm motivated. We can..."
 
         "Make popcorn":
             jump popcorn
@@ -55,11 +60,17 @@ label movie:
 
 label popcorn:
 
-    you "I'm hungry. Let's make popcorn."
-
+    you "I'm seriously {i}so{/i} hungry right now. Let's make popcorn."
+    l "Shouldn't we have done this before watching the movie?"
+    you "Does it make a difference? Popcorn is always so good. Extra butter."
+    l "I prefer caramel."
+    you "To each their own."
+    "Leafy laughs, and shrugs." 
     l "I have the pan ready. Put the kernels in!"
 
-    you "Let's add LOTS of butter."
+    "I don't have the time to question where he got the pan spontaneously from, before Leafy starts making up a storm."
+
+    "When we do end up having the popcorn, it's a mess of melty, buttery goodness. "
 
     jump movie2
 
